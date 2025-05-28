@@ -1,0 +1,49 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, CheckCircle, Users } from "lucide-react";
+---
+
+<section class="px-4 py-20 bg-white">
+      <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">
+            Customized for Your <span class="text-sky-600">Unique Practice</span>
+          </h2>
+          <p class="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+            We understand every practice is different. That's why we work closely with you to develop bespoke software and consulting strategies, ensuring a perfect fit for your goals, whether you're a medical office, weight loss clinic, or spa.
+          </p>
+        </div>
+        
+        <div class="grid lg:grid-cols-3 gap-8">
+          <Card className="border-sky-200 hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CheckCircle className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">Collaborative Process</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-slate-600">We partner with you every step of the way, understanding your unique challenges and opportunities.</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-sky-200 hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <Users className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">Diverse Partnerships</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-slate-600">Leveraging our network of provider partnerships to create comprehensive solutions for your practice.</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-sky-200 hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <ArrowRight className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">Perfect Fit Solutions</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-slate-600">No one-size-fits-all approaches. Every solution is crafted specifically for your practice's needs.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>

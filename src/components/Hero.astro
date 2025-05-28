@@ -1,0 +1,52 @@
+---
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Globe, Monitor, Stethoscope, Users } from "lucide-react";
+---
+
+<section class="relative px-4 py-20 lg:py-32">
+      <div class="container mx-auto max-w-6xl">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <h1 class="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                Modern MD: <span class="text-sky-600">Transforming</span> Local Practices into <span class="text-sky-600">Nationwide Leaders</span>
+              </h1>
+              <p class="text-xl text-slate-600 leading-relaxed">
+                We provide tailored software solutions and expert consulting to expand your medical, weight loss, or spa practice across all 50 states.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 text-lg">
+                Request a Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="lg" className="border-sky-600 text-sky-600 hover:bg-sky-50 px-8 py-4 text-lg">
+                Learn More
+              </Button>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="bg-gradient-to-br from-sky-100 to-sky-200 rounded-3xl p-8 shadow-2xl">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl p-4 shadow-lg">
+                  <Stethoscope className="h-8 w-8 text-sky-600 mb-2" />
+                  <p class="text-sm font-medium text-slate-700">Medical Practices</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-lg">
+                  <Users className="h-8 w-8 text-sky-600 mb-2" />
+                  <p class="text-sm font-medium text-slate-700">Weight Loss Clinics</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-lg">
+                  <Monitor className="h-8 w-8 text-sky-600 mb-2" />
+                  <p class="text-sm font-medium text-slate-700">Spa & Wellness</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-lg">
+                  <Globe className="h-8 w-8 text-sky-600 mb-2" />
+                  <p class="text-sm font-medium text-slate-700">50-State Reach</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

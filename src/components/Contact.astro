@@ -1,0 +1,84 @@
+---
+import { Button } from "@/components/ui/button";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { ArrowRight } from "lucide-react";
+---
+
+<section class="px-4 py-20 bg-slate-900">
+	<div class="container mx-auto max-w-4xl">
+		<div class="text-center mb-12">
+			<h2 class="text-3xl lg:text-5xl font-bold text-white mb-6">
+				Ready to Grow Your Practice{" "}
+				<span class="text-sky-400">Nationwide?</span>
+			</h2>
+			<p class="text-xl text-slate-300 leading-relaxed">
+				Take the first step towards national reach. Contact us today for a
+				no-obligation consultation and discover how Modern MD can craft the
+				perfect strategy for your success.
+			</p>
+		</div>
+
+		<Card className="bg-white shadow-2xl">
+			<CardHeader>
+				<CardTitle className="text-2xl text-center text-slate-900">
+					Request Your Consultation
+				</CardTitle>
+				<CardDescription className="text-center text-slate-600">
+					Let's discuss how we can help expand your practice nationwide
+				</CardDescription>
+			</CardHeader>
+			<CardContent>
+				<form class="space-y-6">
+					<div class="grid md:grid-cols-2 gap-4">
+						<div class="space-y-2">
+							<Label htmlFor="name">Full Name</Label>
+							<Input
+								id="name"
+								placeholder="Your full name"
+								className="border-slate-300"
+							/>
+						</div>
+						<div class="space-y-2">
+							<Label htmlFor="email">Email Address</Label>
+							<Input
+								id="email"
+								type="email"
+								placeholder="your@email.com"
+								className="border-slate-300"
+							/>
+						</div>
+					</div>
+					<div class="space-y-2">
+						<Label htmlFor="practice-type">Practice Type</Label>
+						<Input
+							id="practice-type"
+							placeholder="e.g., Medical Practice, Weight Loss Clinic, Spa"
+							className="border-slate-300"
+						/>
+					</div>
+					<div class="space-y-2">
+						<Label htmlFor="message">Tell us about your needs</Label>
+						<Textarea
+							id="message"
+							placeholder="Describe your current challenges and expansion goals..."
+							className="border-slate-300 min-h-[120px]"
+						/>
+					</div>
+					<Button className="w-full bg-sky-600 hover:bg-sky-700 text-white py-3 text-lg">
+						Request Consultation
+						<ArrowRight className="ml-2 h-5 w-5" />
+					</Button>
+				</form>
+			</CardContent>
+		</Card>
+	</div>
+</section>

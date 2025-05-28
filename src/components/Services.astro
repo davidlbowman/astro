@@ -1,0 +1,98 @@
+---
+import {
+	Card,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
+import {
+	CreditCard,
+	Database,
+	Globe,
+	Monitor,
+	Shield,
+	ShoppingCart,
+} from "lucide-react";
+---
+
+<section class="px-4 py-20 bg-gradient-to-b from-sky-50 to-white">
+      <div class="container mx-auto max-w-6xl">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">
+            Comprehensive Solutions for <span class="text-sky-600">Nationwide Expansion</span>
+          </h2>
+          <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+            Our comprehensive suite of services provides everything you need to scale your practice across all 50 states, all tailored to your specific requirements.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="bg-white border-sky-200 hover:shadow-xl transition-all hover:-translate-y-1">
+            <CardHeader>
+              <Shield className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">HIPAA Compliant EHR</CardTitle>
+              <CardDescription className="text-slate-600">
+                Secure, streamlined Electronic Health Record systems designed for compliance and efficiency.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card className="bg-white border-sky-200 hover:shadow-xl transition-all hover:-translate-y-1">
+            <CardHeader>
+              <Database className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">Custom Database Solutions</CardTitle>
+              <CardDescription className="text-slate-600">
+                Scalable and robust databases to manage patient and operational data effectively.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card className="bg-white border-sky-200 hover:shadow-xl transition-all hover:-translate-y-1">
+            <CardHeader>
+              <Globe className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">50-State Clinical Integration</CardTitle>
+              <CardDescription className="text-slate-600">
+                Seamless integrations with external clinical providers, enabling compliant operations across all U.S. states.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card className="bg-white border-sky-200 hover:shadow-xl transition-all hover:-translate-y-1">
+            <CardHeader>
+              <CreditCard className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">Integrated Payment Processing</CardTitle>
+              <CardDescription className="text-slate-600">
+                Secure and efficient payment solutions tailored to your practice's needs.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card className="bg-white border-sky-200 hover:shadow-xl transition-all hover:-translate-y-1">
+            <CardHeader>
+              <Monitor className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">Professional Website Development</CardTitle>
+              <CardDescription className="text-slate-600">
+                Custom-built websites that reflect your brand and engage your target audience.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card className="bg-white border-sky-200 hover:shadow-xl transition-all hover:-translate-y-1">
+            <CardHeader>
+              <ShoppingCart className="h-12 w-12 text-sky-600 mb-4" />
+              <CardTitle className="text-xl text-slate-900">Shopify E-commerce Stores</CardTitle>
+              <CardDescription className="text-slate-600">
+                Quick-to-launch Shopify e-commerce platforms, perfect for new companies or expanding product lines.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+
+        <div class="text-center mt-12">
+          <p class="text-lg text-slate-600 italic">
+            All services are components of our tailored solutions, designed specifically for your practice's unique needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
